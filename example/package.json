@@ -22,5 +22,5 @@
     "react-native-builder-bob": "^0.36.0"
   },
   "private": true,
-  "homepage": "https://btwnbrackets.github.io/react-native-furi"
+  "homepage": "./"
 }
