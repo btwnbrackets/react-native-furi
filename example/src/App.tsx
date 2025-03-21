@@ -7,7 +7,7 @@ import {
   Text,
   TextInput,
 } from 'react-native';
-import RubySentence from 'react-native-furi';
+import { RubySentence } from 'react-native-furi';
 
 export default function App() {
   const [showFurigana, setShowFurigana] = useState(true);

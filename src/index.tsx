@@ -1,3 +1,5 @@
 import RubySentence from './RubySentence';
+import RubyBlock from './RubyBlock';
+import { furigana } from './furi';
 
-export default RubySentence;
+export { RubySentence, furigana, RubyBlock };
