@@ -24,7 +24,7 @@ jobs:
 
       - name: Build Example App
         run: |
-          yarn example expo export --platform web --output-dir=example/dist
+          yarn example expo export --platform web
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
