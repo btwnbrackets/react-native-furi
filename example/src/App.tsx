@@ -50,13 +50,13 @@ export default function App() {
           showFurigana={showFurigana}
         />
         <TextInput
-          placeholder="expression"
+          placeholder="Expression"
           style={styles.textInput}
           value={expression}
           onChange={(e) => setExpression(e.nativeEvent.text)}
         />
         <TextInput
-          placeholder="reading"
+          placeholder="Reading"
           style={styles.textInput}
           value={reading}
           onChange={(e) => setReading(e.nativeEvent.text)}
