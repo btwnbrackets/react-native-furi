@@ -1,6 +1,6 @@
 {
   "name": "@btwnbrackets/react-native-furi",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "expression and reading to furigana tokens, with Ruby text component",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
