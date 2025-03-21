@@ -23,8 +23,23 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build Example App
+        run: yarn example expo export --platform web
+
+      - name: Prepare Export Directory
         run: |
-          yarn example expo export --platform web
+          # Add .nojekyll to allow folders starting with "_"
+          touch example/dist/.nojekyll
+
+          # Move JS files to the root of dist
+          mkdir -p example/dist/js
+          mv example/dist/_expo/static/js/web/* example/dist/js/
+
+          # Remove unused folders
+          rm -rf example/dist/_expo
+
+          # Update script path in index.html
+          sed -i 's|/_expo/static/js/web/|/js/|g' example/dist/index.html
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
