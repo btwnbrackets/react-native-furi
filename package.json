@@ -4,7 +4,7 @@
   "description": "expression and reading to furigana tokens, with Ruby text component",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
-  "module": "./lib/module/index.js",
+  "types": "./lib/typescript/module/src/index.d.ts",
   "exports": {
     ".": {
       "import": {

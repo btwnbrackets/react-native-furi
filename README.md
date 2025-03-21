@@ -5,7 +5,7 @@ expression and reading to furigana tokens, with Ruby text component
 ## Installation
 
 ```sh
-npm install react-native-furi
+npm install @btwnbrackets/react-native-furi
 ```
 
 ## Usage
