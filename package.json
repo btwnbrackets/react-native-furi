@@ -46,6 +46,8 @@
     "release": "release-it"
   },
   "keywords": [
+    "furigana",
+    "japanese",
     "react-native",
     "ios",
     "android"
